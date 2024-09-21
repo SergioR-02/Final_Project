@@ -1,0 +1,425 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Personaliza la barra de desplazamiento de toda la página */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento vertical */
+  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* El fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del fondo */
+}
+
+/* El "pulgar" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Efecto hover en el pulgar */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el ratón */
+}
+
+
+.sabaletas-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+}
+
+.sabaletas-navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.sabaletas-menu-button {
+  display: none;
+  background: none;
+  padding: 8px 15px;
+  border: 1px solid #343434;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #343434;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.sabaletas-menu-button:hover {
+  background-color: #c7cccf;
+
+}
+
+.sabaletas-title {
+  color: #343434;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-left: 60px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sabaletas-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 60px;
+}
+
+.sabaletas-menu li {
+  margin: 0 15px;
+}
+
+.sabaletas-menu a {
+  color: rgb(39, 37, 37);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+
+
+.sabaletas-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f6f6f6, #e5f0f8);
+  font-family: "Inria Sans", sans-serif;
+  color: #333;
+}
+
+.sabaletas-header {
+  margin-top: 90px;
+  background-image: url("https://periferiaprensa.com/wp-content/uploads/2023/03/6_7_8_Paramilitarismo-4-Pacifista-1600x800.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 10.6rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sabaletas-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.sabaletas-header p {
+  font-size: 1.3rem;
+}
+
+.sabaletas-main {
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.sabaletas-header{
+  padding-top: 330px; /* Ajusta este valor si es necesario */
+  margin-top: -90px; 
+}
+
+.sabaletas-section {
+  padding-top: 90px; /* Ajusta este valor si es necesario */
+  margin-top: -90px; /* Ajusta este valor si es necesario */
+}
+.sabaletas-section {
+  margin-bottom: 2rem;
+}
+
+.sabaletas-section h2 {
+  font-family: "Inria Sans", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sabaletas-section p,
+.sabaletas-section ul {
+  font-family: "Poppins", sans-serif; 
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.porque-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.porque-container p{
+  max-width: 500px;
+}
+
+.jumImage {
+  max-width: 23%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+
+/* Diseño para la sección de Yuri Banguera */
+.yuri-container {
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+
+
+.yuri {
+  border-radius: 50%;
+  width: 280px; /* Ajusta según sea necesario */
+  height: 280px; /* Ajusta según sea necesario */
+  object-fit: cover;
+}
+
+.se-busca {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Diseño para el recuadro de desaparición forzada */
+.recuadro {
+  margin-top: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 12px 15px;
+}
+
+.recuadro p{
+  text-align: center;
+}
+
+/* Diseño para la sección de justicia */
+.justicia-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.impunidad-image {
+  max-width: 45%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
+}
+
+.impunidad-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.sabaletas-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.sabaletas-cards img {
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.sabaletas-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Esto alinea la imagen y el texto verticalmente */
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sabaletas-card1 {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sabaletas-card,.sabaletas-card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
+}
+
+.sabaletas-demand-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.sabaletas-support {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sabaletas-support h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sabaletas-support p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sabaletas-button {
+  background-color: #b91c1c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sabaletas-button:hover {
+  background-color: #9b1111;
+}
+
+.sabaletas-footer {
+  background-color: #2d3748;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.sabaletas-footer p {
+  margin: 0.5rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+  .icons{
+    width: 110px;
+  }
+
+  .sabaletas-header{
+    padding: 5rem;
+    padding-top: 230px; 
+    margin-top: -90px; 
+  }
+
+  .sabaletas-header h1 {
+    font-size: 2rem;
+  }
+
+  .sabaletas-header p {
+    font-size: 1rem;
+  }
+
+  .sabaletas-main {
+    padding: 1rem;
+  }
+
+  .sabaletas-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .sabaletas-section p,
+  .sabaletas-section ul {
+    font-size: 1rem;
+  }
+
+  .sabaletas-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .sabaletas-card {
+    display: flex;
+
+  }
+}
+@media (max-width: 828px) {
+  .sabaletas-navbar {
+    padding: 1.5rem;
+  }
+  .sabaletas-menu-button {
+    display: block;
+  }
+  .sabaletas-title {
+    margin-left: 0;
+    font-size: 1.25rem;
+  }
+  
+
+  .sabaletas-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+
+  .sabaletas-menu.open {
+    display: flex;
+    border-top: 1px solid #3434345e;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.144);
+  }
+
+  .sabaletas-menu li {
+    margin:0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sabaletas-menu li:hover{
+    border-bottom: 1.2px solid #3434345e;
+  }
+
+
+  .porque-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jumImage {
+    max-width: 50%;
+    margin-top: 25px;
+  }
+
+  .porque-container p{
+    max-width: 1000px;
+  }
+
+  .justicia-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .impunidad-image {
+    max-width: 75%;
+    margin: 0;
+  }
+}
