@@ -4,6 +4,7 @@ import './SabaletasMemorial.css';
 import jumImage from './img/jum.webp';
 import yuri from './img/OIP.jfif';
 import impunidad from './img/impunidad.png'
+import UBDP from './img/UBDP.png'
 
 export default function SabaletasMemorial() {
 
@@ -133,17 +134,43 @@ export default function SabaletasMemorial() {
           </div>
         </section>
 
-        <section id="apoyo" className="sabaletas-support">
+        <section className="ubdp-section humanitarian-efforts">
+          <h2>Búsqueda Humanitaria de la UBPD</h2>
+          <div className="ubdp-content">
+              <div className="ubdp-text">
+                  <p>La UBPD tiene como objetivo principal ayudar a las víctimas en la búsqueda de sus seres queridos desaparecidos debido al conflicto armado. Implementa acciones humanitarias para localizar a personas con vida y, en casos de fallecimiento, busca recuperar, identificar y entregar dignamente los cuerpos, aliviando el sufrimiento causado por la falta de respuesta del Estado.</p>
+                  <button
+                      className="sabaletas-button ubpd-button"
+                      onClick={() => window.open('https://unidadbusqueda.gov.co', '_blank')}
+                  >
+                      Conoce más sobre la UBPD
+                  </button>
+              </div>
+            
+              <div className="ubdp-logo">
+                  <img src={UBDP} alt="ss" />
+              </div>
+          </div>
+        </section>
+
+      </main>
+
+      <section className="fondo">
+        
+      </section>
+
+      <section id="apoyo" className="sabaletas-support">
           <h2>¡Honremos la memoria!</h2>
           <p>No permitamos que el olvido prevalezca sobre la verdad y la justicia.</p>
-          <button
-        className="sabaletas-button"
-        onClick={() => window.open('https://www.coljuristas.org/documentos/comunicados_de_prensa/comunicado_15_annos_de_la_masacre_de_sabaletas.pdf', '_blank')}
-    >
-        Más Información
-    </button>
+          <div className="buttons-container">
+            <button
+                className="sabaletas-button"
+                onClick={() => window.open('https://www.coljuristas.org/documentos/comunicados_de_prensa/comunicado_15_annos_de_la_masacre_de_sabaletas.pdf', '_blank')}
+            >
+                Más Información
+            </button>
+          </div>
         </section>
-      </main>
 
       <footer className="sabaletas-footer">
       <p>

@@ -135,14 +135,15 @@ html {
 }
 
 .sabaletas-section {
-  padding-top: 90px; /* Ajusta este valor si es necesario */
-  margin-top: -90px; /* Ajusta este valor si es necesario */
+  padding-top: 100px; /* Ajusta este valor si es necesario */
+  margin-top: -100px; /* Ajusta este valor si es necesario */
 }
 .sabaletas-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .sabaletas-section h2 {
+  margin-top: 30px;
   font-family: "Inria Sans", sans-serif;
   text-align: center;
   font-size: 2rem;
@@ -201,7 +202,7 @@ html {
 
 /* Diseño para el recuadro de desaparición forzada */
 .recuadro {
-  margin-top: 35px;
+  margin-top: 40px;
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -264,7 +265,14 @@ html {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.sabaletas-card,.sabaletas-card1:hover {
+
+.sabaletas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
+}
+
+
+.sabaletas-card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
 }
@@ -276,8 +284,16 @@ html {
 }
 
 .sabaletas-support {
+  padding: 2rem 3rem 4.2rem;
   text-align: center;
-  margin-bottom: 3rem;
+}
+
+.fondo{
+  padding: 16.5rem 3rem 4.2rem;
+  text-align: center;
+  background-image: url("https://unidadbusqueda.gov.co/wp-content/uploads/2024/08/General30Agosto1920x706.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .sabaletas-support h2 {
@@ -290,7 +306,15 @@ html {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 688px) {
+  .sabaletas-support{
+    padding: 3rem 3rem 4.7rem;
+    max-width: 90%;
+    margin: 0 auto;
 
+  }
+  
+}
 .sabaletas-button {
   background-color: #b91c1c;
   color: white;
@@ -303,6 +327,14 @@ html {
 
 .sabaletas-button:hover {
   background-color: #9b1111;
+}
+.ubpd-button {
+  margin-top: 10px;
+  background-color: #9181b2;
+}
+
+.ubpd-button:hover {
+  background-color: #7a6a9a;
 }
 
 .sabaletas-footer {
@@ -354,6 +386,8 @@ html {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+
+
   .sabaletas-card {
     display: flex;
 
@@ -384,12 +418,13 @@ html {
 
   .sabaletas-menu.open {
     display: flex;
+    margin: 0;
     border-top: 1px solid #3434345e;
     box-shadow: 0 10px 17px rgba(0, 0, 0, 0.144);
   }
 
-  .sabaletas-menu li {
-    margin:0;
+  .sabaletas-menu.open li {
+    margin-left:-30px;
     text-align: center;
     padding: 10px;
   }
@@ -421,5 +456,77 @@ html {
   .impunidad-image {
     max-width: 75%;
     margin: 0;
+  }
+}
+
+.ubdp-section {
+  background-color: #f9f9f9;
+  padding: 20px 30px 50px ;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 70px 0 40px;
+  font-family: Arial, sans-serif;
+}
+
+.ubdp-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2d3e50;
+  margin-bottom: 20px;
+}
+
+.ubdp-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.ubdp-text {
+  width: 60%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.ubdp-text p {
+  margin-bottom: 15px;
+}
+
+.ubdp-logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ubdp-logo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+@media (max-width: 768px) {
+  .ubdp-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .ubdp-logo img{
+    margin: 30px 0;
+  }
+
+  .ubdp-text {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .ubdp-logo {
+      width: 100%;
   }
 }
